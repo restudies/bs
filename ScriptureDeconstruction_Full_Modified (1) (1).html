@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bible Under Examination</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom font styles */
+        .font-cinzel {
+            font-family: 'Cinzel Decorative', serif;
+        }
+        .font-merriweather {
+            font-family: 'Merriweather', serif;
+        }
+        /* Subtle background pattern - Applied to the whole body */
+        body {
+            background-color: #363636; /* Dark grey background, similar to chat */
+            color: #e0e0e0; /* Default light text for the entire body */
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.6' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); /* Subtle diagonal lines, adjusted for dark background */
+        }
+        /* Styling for the main lines - Adjusted for dark background */
+        .elegant-line {
+            border: none;
+            border-top: 1px solid #555; /* Lighter line for contrast */
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            margin: 2rem auto;
+            width: 100%;
+        }
+        .elegant-line-short {
+            border: none;
+            border-top: 1px solid #555; /* Lighter line for contrast */
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            margin: 1rem auto;
+            width: 75%; /* 3/4 length */
+        }
+        /* Responsive adjustments for headings */
+        h1 {
+            font-size: 2.5rem; /* Default for mobile */
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        @media (min-width: 768px) { /* Medium screens and up */
+            h1 {
+                font-size: 4rem; /* Larger for desktop */
+            }
+            h2 {
+                font-size: 2.5rem;
+            }
+            h3 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body class="font-merriweather leading-relaxed p-4 md:p-8">
+
+    <!-- Main content container - now also dark, with light text -->
+    <div class="max-w-4xl mx-auto  text-gray-200 p-6 md:p-10 shadow-lg rounded-2xl">
+
+        <!-- Title Section -->
+        <h1 class="font-cinzel text-white text-center font-bold mb-2 break-words">
+            The Bible Under Examination
+        </h1>
+        <hr class="elegant-line">
+        <h2 class="font-cinzel text-white text-center text-xl md:text-2xl mb-4 break-words">
+            A Critical Analysis of Biblical Texts and Claims
+        </h2>
+        <hr class="elegant-line-short">
+        <p class="font-cinzel text-white text-center text-lg md:text-xl mt-8 mb-12 break-words">
+            "Truth does not fear investigation. Truth has the strength to withstand scrutiny. Truth that cannot be scrutinised is not truth."
+        </p>
+        <hr class="elegant-line">
+
+        <!-- Table of Contents -->
+        <section id="table-of-contents" class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-center">TABLE OF CONTENTS</h2>
+            <ul class="list-none p-0 space-y-2 text-lg">
+                <li><a href="#introduction" class="text-blue-400 hover:underline">Introduction</a></li>
+                <li><a href="#old-testament" class="text-blue-400 hover:underline">The Old Testament</a>
+                    <ul class="ml-6 list-disc list-inside space-y-1 text-base">
+                        <li><a href="#two-creation-accounts" class="text-blue-300 hover:underline">Two Creation Accounts</a></li>
+                        <li><a href="#biblical-contradictions" class="text-blue-300 hover:underline">Biblical Contradictions</a></li>
+                        <li><a href="#problem-of-samson" class="text-blue-300 hover:underline">The Case Against a Biblical Hero: The Problem of Samson</a></li>
+                        <li><a href="#elisha-and-children" class="text-blue-300 hover:underline">The Story of Elisha and the Children</a></li>
+                        <li><a href="#mythological-parallels" class="text-blue-300 hover:underline">Mythological Parallels</a></li>
+                        <li><a href="#yhwh-contradictions" class="text-blue-300 hover:underline">YHWH Contradictions</a></li>
+                        <li><a href="#prophecies-and-deceit" class="text-blue-300 hover:underline">Prophecies and Deceit</a></li>
+                        <li><a href="#which-bible-true" class="text-blue-300 hover:underline">Which Bible Is True?</a></li>
+                        <li><a href="#divine-court-multiple-gods" class="text-blue-300 hover:underline">Divine Court and Multiple Gods</a></li>
+                        <li><a href="#satan-role" class="text-blue-300 hover:underline">Satan as a Role</a></li>
+                        <li><a href="#how-old-bible" class="text-blue-300 hover:underline">How Old Is the Bible?</a></li>
+                        <li><a href="#jephthahs-vow" class="text-blue-300 hover:underline">Jephthah's Vow</a></li>
+                        <li><a href="#genocidal-commands" class="text-blue-300 hover:underline">Genocidal Commands</a></li>
+                        <li><a href="#scientific-data" class="text-blue-300 hover:underline">Scientific Data on Biblical Claims</a></li>
+                        <li><a href="#name-jehovah" class="text-blue-300 hover:underline">The Name "Jehovah"</a></li>
+                        <li><a href="#jesus-and-yhwh" class="text-blue-300 hover:underline">Jesus and YHWH</a></li>
+                    </ul>
+                </li>
+                <li><a href="#new-testament" class="text-blue-400 hover:underline">The New Testament</a>
+                    <ul class="ml-6 list-disc list-inside space-y-1 text-base">
+                        <li><a href="#revelation-freaky-book" class="text-blue-300 hover:underline">Revelation: A Freaky Book</a></li>
+                        <li><a href="#epistles" class="text-blue-300 hover:underline">The Epistles and Paul</a></li>
+                        <li><a href="#gospels" class="text-blue-300 hover:underline">The Gospels</a></li>
+                        <li><a href="#crucifixion-contradictions" class="text-blue-300 hover:underline">Contradictions Between Jesus' Crucifixion and Historical Roman Crucifixions</a></li>
+                        <li><a href="#earliest-non-biblical" class="text-blue-300 hover:underline">Earliest Non-Biblical Accounts of Jesus</a></li>
+                        <li><a href="#jesus-who" class="text-blue-300 hover:underline">Jesus Who? Historical Evidence for Jesus</a></li>
+                        <li><a href="#myth-before-myth" class="text-blue-300 hover:underline">The Myth Before the Myth: Ancestral Shadows of the Christ Figure</a></li>
+                    </ul>
+                </li>
+                <li><a href="#conclusion" class="text-blue-400 hover:underline">Conclusion</a></li>
+            </ul>
+        </section>
+
+        <hr class="elegant-line mb-12">
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">INTRODUCTION</h2>
+            <p class="mb-4">Is the Bible really the inspired word of God? And if it was, would it be able to withstand the scrutiny of critical thinking and logical analysis?</p>
+            <p class="mb-4">A true word of God at the very least would be timeless, incorruptible, reflect the nature of a loving and perfect god, and become more harmonious with intense study—but if it doesn't? What would that indicate?</p>
+        </section>
+
+        <hr class="elegant-line mb-12">
+
+        <!-- The Old Testament Section -->
+        <section id="old-testament" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">THE OLD TESTAMENT</h2>
+
+            <h3 id="two-creation-accounts" class="text-xl font-bold mt-8 mb-4">Two Creation Accounts</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <p class="font-bold mb-2">GENESIS 1:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>God creates by speaking</li>
+                        <li>Creation in 6 days</li>
+                        <li>Humans (male and female) created together, last</li>
+                        <li>God called "God" (Elohim)</li>
+                        <li>Order: light, sky, land, plants, stars, animals, humans</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold mb-2">GENESIS 2:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>God created by hand</li>
+                        <li>No timeframe mentioned</li>
+                        <li>Man created first, then animals, then woman from man</li>
+                        <li>God called "LORD God" (YHWH Elohim)</li>
+                        <li>Focuses on Eden, man's role, and relationships</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 id="biblical-contradictions" class="text-xl font-bold mt-8 mb-4">Biblical Contradictions</h3>
+            <p class="font-bold mb-2">Lifespan Contradictions</p>
+            <p class="mb-2">Genesis 6:3 says man's days shall be 120 years, yet:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Abraham lived 175 years (Genesis 12:4)</li>
+                <li>Sarah lived 127 years (Genesis 23:1)</li>
+                <li>Isaac lived 180 years (Genesis 35:28-29)</li>
+                <li>Jacob lived 147 years (Genesis 47:28)</li>
+            </ul>
+            <p class="font-bold mb-2">Flood Duration</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Genesis 7:17 says the flood lasted 40 days</li>
+                <li>Genesis 7:24 says 150 days</li>
+            </ul>
+            <p class="font-bold mb-2">Divine Commands vs. Actions</p>
+            <p class="mb-4">YHWH says "Thou shall not kill" (Exodus 20:13), but just a few chapters later, mass slaughter is commanded by YHWH (Exodus 32:27).</p>
+            <p class="mb-4">Deuteronomy 24:16 says children shouldn't be punished for their parents' sins, yet in multiple places God does exactly that (Exodus 20:5, 2 Samuel 12:14).</p>
+
+            <h3 id="problem-of-samson" class="text-xl font-bold mt-8 mb-4">The Case Against a Biblical Hero: The Problem of Samson</h3>
+            <p class="mb-4">Samson, often exalted as a heroic figure and judge of Israel, exemplifies the <strong class="font-bold">hypocrisy and corruption</strong> embedded within biblical narratives. A careful reading—especially from the <strong class="font-bold">Septuagint</strong>, the earliest known Greek translation of the Hebrew scriptures—reveals an individual whose behavior was violent, erratic, immoral, and clearly at odds with the laws he was supposedly ordained to uphold. Modern translations often present a sanitized portrayal of Samson's offenses, softening and masking the reality of who he was.</p>
+            <p class="font-bold mb-2">Origin: An Angelic Decree (Judges 13:3-5)</p>
+            <p class="mb-4">According to the Septuagint, an angel appears to Samson's barren mother with specific instructions about her son's divine calling as a <strong class="font-bold">Nazirite</strong>—one bound by sacred vows including avoiding contact with the dead.</p>
+            <p class="font-bold mb-2">The Lion, the Corpse, and the Honey (Judges 14:5-9)</p>
+            <p class="mb-4">Samson's first major moral failing comes when he tears apart a lion with his bare hands and later eats honey from its rotting corpse—a direct violation of the Nazirite vow to avoid contact with the dead. This act of sacrilege under Jewish law is essentially brushed past in the narrative without divine rebuke.</p>
+            <p class="font-bold mb-2">The Riddle, the Wager, and Mass Murder (Judges 14:12-19)</p>
+            <p class="mb-2">Samson proposes a riddle during his wedding feast and wagers 30 garments. When the Philistines coerce his wife into revealing the answer, Samson flies into a rage and slaughters 30 innocent men to settle his bet.</p>
+            <p class="italic mb-4">Septuagint (14:19): "And the Spirit of the Lord rushed upon him, and he went down to Ashkelon and struck down thirty men of the city. He took their garments and gave them to those who had explained the riddle. Burning with anger, he went up to his father's house."</p>
+            <p class="mb-4">This is not justice; it's petty revenge and indiscriminate murder. There is no trial, no proportionality, and no regard for life. He killed 30 unrelated men to settle a gambling debt.</p>
+            <p class="font-bold mb-2">Escalation: Burning Fields and Slaughter (Judges 15)</p>
+            <p class="mb-2">After his wife is given to another man, Samson catches 300 foxes, ties torches to their tails, and releases them into Philistine fields, destroying crops and livelihoods. When the Philistines retaliate by burning his wife and her father alive, Samson responds with further slaughter.</p>
+            <p class="italic mb-4">Septuagint (15:7-8): "And Samson said to them, 'Since you did this, yet again I will take vengeance on you, and then I will cease.' And he struck them hip and thigh with a great slaughter."</p>
+            <p class="font-bold mb-2">Final Bloodbath (Judges 16:28-30)</p>
+            <p class="mb-2">Captured, blinded, and humiliated, Samson calls on God for one last act of vengeance. He collapses the Philistine temple, killing himself and 3,000 people, including men, women, and likely children.</p>
+            <p class="italic mb-4">Septuagint (16:30): "Let my soul die with the Philistines! And he bent with strength, and the house fell on the rulers and on all the people in it. And the dead whom he killed at his death were more than those whom he killed in his life."</p>
+            <p class="mb-4">If we take the Septuagint's implication seriously—that he killed more in death than in life—the total body count approaches 6,000–7,000 human beings.</p>
+            <p class="font-bold mb-2">The Heroic Illusion</p>
+            <p class="mb-4">Samson is celebrated in Hebrews 11:32 as a man of faith and held up as a divinely empowered champion. But his legacy is one of brutality, impulsiveness, and disregard for divine law. This is the so-called hero of Israel—a morally corrupt man championed by the biblical narrative as a divine instrument.</p>
+            <p class="mb-4">Samson's story is not a tale of divine justice or spiritual strength. It is a <strong class="font-bold">parable of religious contradiction</strong>—a morally compromised figure presented as righteous.</p>
+
+            <h3 id="elisha-and-children" class="text-xl font-bold mt-8 mb-4">The Story of Elisha and the Children</h3>
+            <p class="mb-4">In 2 Kings 2:23–25, we encounter one of the most disturbing stories in the Old Testament: the prophet Elisha is mocked by a group of children, and in response, he calls down a curse, after which two female bears emerge from the forest and maul 42 of them.</p>
+            <p class="font-bold mb-2">The Scene</p>
+            <p class="mb-2">Elisha has just witnessed the miraculous ascent of his mentor Elijah into the heavens. Now the sole prophetic figure, Elisha is walking toward Bethel—a city already known for its idolatry. As he approaches, a group of young males come out of the city and mock him with the phrase: <strong class="font-bold">"Go up, you baldhead! Go up, you baldhead!"</strong></p>
+            <p class="mb-4">Elisha then turns around, curses them in the name of YHWH, and two she-bears emerge from the forest and maul 42 of the youths.</p>
+            <p class="font-bold mb-2">What does the Hebrew actually say?</p>
+            <p class="mb-2">The key term is <strong class="font-bold">נְעָרִים קְטַנִּים</strong> (na'arim qetanim).</p>
+            <ul class="list-disc list-inside mb-4">
+                <li><strong class="font-bold">Na'ar</strong> is a term broadly used for boy, youth, or young man, but not exclusively children.</li>
+                <li><strong class="font-bold">Qatan</strong> means small or young, and when combined with na'arim, it amplifies the youthfulness of the group.</li>
+            </ul>
+            <p class="font-bold mb-2">What does the Septuagint say?</p>
+            <p class="mb-2">In the Septuagint, the phrase becomes: <strong class="font-bold">παιδάρια μικρά</strong> (paidaria mikra)</p>
+            <ul class="list-disc list-inside mb-4">
+                <li><strong class="font-bold">Paidarion</strong> is the diminutive of *pais* (child/servant), meaning little child or young lad.</li>
+                <li><strong class="font-bold">Mikra</strong> simply means small.</li>
+            </ul>
+            <p class="mb-4">This linguistic choice strongly suggests <strong class="font-bold">prepubescent children</strong>. These are not grown men or teen hooligans—they are very likely children in the 8–10-year-old range.</p>
+            <p class="font-bold mb-2">Scholarly Consensus</p>
+            <p class="mb-2">The combination of Hebrew and Greek terminology indicates young children, not adult mockers. This aligns with other uses of *na'ar qatan* in Hebrew scripture:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Genesis 44:20: Benjamin, likely a child, is called a *na'ar qatan*</li>
+                <li>1 Samuel 20:35: A servant boy is called the same</li>
+                <li>1 Kings 3:7: Solomon calls himself a *na'ar qatan*—emphasizing inexperience</li>
+            </ul>
+            <p class="mb-4">The overwhelming linguistic and scholarly consensus points to <strong class="font-bold">literal children</strong>, not metaphorical "youths" or grown troublemakers.</p>
+            <p class="font-bold mb-2">Conclusion</p>
+            <p class="mb-4">The passage is deeply disturbing: Elisha, a prophet of God, curses a group of young children, and YHWH responds by sending bears to maul 42 of them—and this act is presented without divine rebuke or regret.</p>
+            <p class="mb-4">The ancient texts, read plainly, point to children. This makes the story not only brutal but tragically revealing of the <strong class="font-bold">violent theology</strong> that pervades parts of the Old Testament.</p>
+
+            <h3 id="mythological-parallels" class="text-xl font-bold mt-8 mb-4">Mythological Parallels</h3>
+            <p class="font-bold mb-2">The Enuma Elish (1750–1100 BCE) vs. Genesis (950–500 BCE)</p>
+            <p class="mb-4">In the beginning, the Spirit of God moved upon the face of these waters. He split the watery chaos, forming heaven and earth; order was carved from disorder. He set the lights in the heavens - the sun, moon, and stars - to give light upon the earth and to mark the seasons and days. And he established the cosmic order. And behold, it was very good.</p>
+            <p class="mb-4">This ancient Babylonian account predates the Hebrew scriptures by over a millennium, yet the themes echo through both traditions.</p>
+            <p class="font-bold mb-2">The Epic of Gilgamesh vs. Noah's Flood</p>
+            <p class="mb-4">The Lord looked upon the earth and saw that the wickedness of man was great, and that the noise and clamor of humanity troubled the divine realm. The god Ea, creator of the earth, decided to end all life with a great flood, for mankind had become corrupt and their ways were evil in the sight of heaven.</p>
+            <p class="mb-4">But there was one righteous man found upon the earth - Utnapishtim, who walked with the gods and was perfect in his generation. And the Lord spoke unto Utnapishtim in a dream, saying: "Behold, I will bring a flood of waters upon the earth to destroy all flesh wherein is the breath of life. But with thee will I establish my covenant."</p>
+            <p class="mb-4">And God commanded Utnapishtim to construct a six-story square ark, saying: "Make thee an ark; rooms shalt thou make in the ark, and shalt pitch it within and without with pitch. And of every living thing of all flesh, two of every sort shalt thou bring into the ark, to keep them alive with thee; they shall be male and female."</p>
+            <p class="mb-4">And Utnapishtim did according to all that the Lord commanded him. He brought into the ark his family, and all manner of beasts, and fowls of the air, and every creeping thing, two and two went they unto Utnapishtim into the ark, the male and the female, as God had commanded.</p>
+            <p class="mb-4">And the flood was upon the earth seven days and seven nights, and the waters increased and lifted up the ark above the earth. And all flesh died that moved upon the earth, both of fowl and of cattle, and of beast, and of every creeping thing, and every man. All in whose nostrils was the breath of life died.</p>
+            <p class="mb-4">And the ark rested upon the mountains, and the waters decreased continually. And after seven days, Utnapishtim sent forth a dove from him, to see if the waters were abated; but the dove found no rest for the sole of her foot, and she returned unto him into the ark. Then he sent forth a swallow, but it also returned. And he sent forth a raven, which went forth and did not return, for it found sustenance upon the earth.</p>
+            <p class="mb-4">And Utnapishtim set all the animals free, and built an altar unto the Lord, and offered burnt offerings upon the altar of cane, cedar, and myrtle. And the Lord smelled a sweet savor, and blessed Utnapishtim and his wife with divine immortality in gratitude for their faithfulness.</p>
+            <p class="mb-4">This ancient account, preserved in cuneiform tablets as early as <strong class="font-bold">2100-2000 BC</strong>, predates the Hebrew scriptures by over a millennium, yet tells the same story of divine judgment and righteous preservation.</p>
+            <p class="font-bold mb-2">The Tower of Babel - A Hebrew Reimagining of Babylonian Ziggurats</p>
+            <p class="font-bold mb-2">The Historical Reality:</p>
+            <p class="mb-4">Ziggurats were massive stepped temple towers built throughout Mesopotamia starting around 2100 BCE. These were literal "towers reaching to heaven" - multi-story religious complexes designed to connect earth and the divine realm. The most famous was the Etemenanki ziggurat in Babylon, dedicated to the god Marduk.</p>
+            <p class="font-bold mb-2">The Biblical Reframe:</p>
+            <p class="mb-4">The Hebrew writers took this well-known Babylonian architectural tradition and turned it into a cautionary tale about human pride. Instead of celebrating these monuments as sacred connections to the gods, they recast them as symbols of arrogance - humans trying to "make a name for themselves" and "reach heaven" through their own efforts.</p>
+            <p class="font-bold mb-2">The Political Context:</p>
+            <p class="mb-4">This story was likely written during or after the Babylonian exile (586 BCE), when Hebrew writers were processing their captivity in Babylon. They're literally surrounded by these massive ziggurats, so they create a story that explains why Babylon has all these tower-temples while simultaneously delegitimizing them as monuments to human arrogance rather than divine connection.</p>
+
+            <h3 id="yhwh-contradictions" class="text-xl font-bold mt-8 mb-4">YHWH Contradictions</h3>
+            <p class="mb-4">"I the Lord do not change" (Malachi 3:6)</p>
+            <p class="mb-4">Yet God drowns the world (Genesis 6–8) for wickedness, but then He regrets it (Genesis 6:6, 8:21).</p>
+            <p class="mb-4">God's commands include rape as spoils of war (Numbers 31:17–18) and slavery (Leviticus 25:44–46), yet He is called "holy" and "just."</p>
+            <p class="mb-4">"Do not murder" (Exodus 20:13) "Unless I command it"</p>
+            <p class="mb-4">God says He "cannot lie" (Numbers 23:19, Titus 1:2), but then sends lying spirits (1 Kings 22:23) and deceives prophets (Ezekiel 14:9).</p>
+            <p class="font-bold mb-2">God Directly Deceives a Prophet</p>
+            <p class="mb-4">Ezekiel 14:9: "And if the prophet be deceived when he hath spoken a thing, I the LORD have deceived that prophet, and I will stretch out my hand upon him..."</p>
+            <p class="font-bold mb-2">YHWH's Deceit</p>
+            <p class="mb-4">Jeremiah 20:7-13: "O LORD, thou hast deceived me, and I was deceived; thou art stronger than I, and hast prevailed." The prophet Jeremiah directly accuses God of manipulating and overpowering him through deception.</p>
+
+            <h3 id="prophecies-and-deceit" class="text-xl font-bold mt-8 mb-4">Prophecies and Deceit</h3>
+            <p class="font-bold mb-2">Failed Prophecies</p>
+            <p class="font-bold mb-2">Abraham's Descendants' Enslavement</p>
+            <p class="mb-2">God says Abraham's descendants will be enslaved for 400 years (Genesis 15:13), but they were enslaved for 430 years (Exodus 12:40). <strong class="font-bold">FAILURE</strong></p>
+            <p class="font-bold mb-2">Ezekiel's Prophecy Against Tyre</p>
+            <p class="mb-2">"Nebuchadnezzar... shall slay thy daughters... make a spoil of thy riches... I will make thee like the top of a rock; thou shalt be a place to spread nets upon; thou shalt be built no more."</p>
+            <p class="mb-4">Ezekiel said Tyre would be utterly destroyed by Nebuchadnezzar and never rebuilt, but Nebuchadnezzar failed to conquer mainland Tyre after a 13-year siege. Alexander the Great destroyed it later, but Tyre was rebuilt. Today, Tyre still exists in Lebanon. <strong class="font-bold">FAILURE</strong></p>
+            <p class="font-bold mb-2">The Misinterpreted Prophecy</p>
+            <p class="mb-2">"Behold, a virgin shall conceive and bear a son..." The Hebrew word is <strong class="font-bold">almah</strong> — meaning "young woman," not a virgin (Isaiah 7:14). Context: It was a sign to King Ahaz in the 8th century BCE, not about Jesus 700+ years later. <strong class="font-bold">FAILURE</strong></p>
+            <p class="font-bold mb-2">Ezekiel's Temple Vision</p>
+            <p class="mb-2">Ezekiel 40–48: Detailed specific measurements and visions of a future temple. The temple was never built as described. Jewish expectations remain unfulfilled. <strong class="font-bold">FAILURE</strong></p>
+            <p class="font-bold mb-2">Jonah's Decree</p>
+            <p class="mb-2">Jonah 3:4: "Forty more days and Nineveh will be overturned." It wasn't overturned. Excuses are made that God "changed his mind," but the prophecy itself didn't include a condition; it was absolute. <strong class="font-bold">FAILURE</strong></p>
+
+            <h3 id="which-bible-true" class="text-xl font-bold mt-8 mb-4">Which Bible Is True?</h3>
+            <p class="mb-4">The <strong class="font-bold">Septuagint</strong> was the authoritative Greek translation of Hebrew Scriptures, completed around 285–247 BCE in Alexandria by seventy Jewish scholars. This was the Bible that Jesus quoted from, that Paul referenced in his letters, and that the early Christian church considered scripture.</p>
+            <p class="mb-4">The <strong class="font-bold">Dead Sea Scrolls</strong> (200 BCE–70 CE) reveal that Second Temple Judaism used texts closely matching the Septuagint tradition—not the later Hebrew manuscripts that would become our modern Old Testament. These ancient discoveries prove the Septuagint preserved earlier, more authentic textual traditions.</p>
+            <p class="font-bold mb-2">Textual Manipulation</p>
+            <p class="mb-4">What happened next was textual manipulation. Jewish scribes, working centuries after Christ, created the <strong class="font-bold">Masoretic Text</strong>—a heavily edited, standardized version that deliberately departed from the Septuagint to distance Judaism from Christian interpretations. Variations were eliminated, prophecies were altered, and entire passages were modified.</p>
+            <p class="mb-4">This corrupted Masoretic version became the foundation for virtually every Bible sitting in churches today. The <strong class="font-bold">King James Bible (1611)</strong> relied primarily on these later, adulterated Hebrew texts rather than the authentic Septuagint tradition used by the apostles themselves.</p>
+            <p class="mb-4">Modern translations—the NIV, ESV, NASB, and the New World Translation—all trace their Old Testament lineage back to these same compromised manuscripts, not to the Bible that Jesus and the early church actually used.</p>
+            <p class="mb-4">We've been reading a rewrite of a rewrite, while the original text used by Christ himself sits largely ignored in scholarly archives.</p>
+
+            <h3 id="divine-court-multiple-gods" class="text-xl font-bold mt-8 mb-4">El Elyon & YHWH - Divine Court and Multiple Gods</h3>
+            <p class="mb-4">"When El Elyon divided the nations, when He separated the sons of Adam, He set the boundaries of the nations according to the number of the <strong class="font-bold">sons of God</strong>. But YHWH's portion is His people, Jacob is the lot of His inheritance." (Deuteronomy 32:8,9 - Septuagint)</p>
+            <p class="mb-4">"El Elyon is the most high" (Psalms 81)</p>
+            <p class="mb-4">"El Elyon stands in the divine assembly; among the gods He judges. He says: 'You are gods (plural elohim/theoi), <strong class="font-bold">Sons of the El Elyon</strong> (Most High). Yet you shall die like Adam (like mortals), and fall like one of the sarim (princes/archons).'" (Psalms 82:6-7)</p>
+
+            <h3 id="satan-role" class="text-xl font-bold mt-8 mb-4">Satan as a Role</h3>
+            <p class="mb-4">In the original Hebrew of the Old Testament, "<strong class="font-bold">ha-satan</strong>" literally means "the accuser." "Ha" is the Hebrew definite article, meaning "the," and "satan" means "accuser" or "the adversary" or "challenger" (like a courtroom prosecutor). It isn't a fallen angel.</p>
+            <p class="font-bold mb-2">Key Points:</p>
+            <p class="font-bold mb-2">The Serpent in Eden:</p>
+            <p class="mb-4">Mentioned in Genesis, it never once says the serpent is Satan. It just says "the most cunning of the animals," and there's no angelic rebellion even mentioned at this time or a war in heaven. There is no devil here; that theology comes centuries later.</p>
+            <p class="font-bold mb-2">In Job:</p>
+            <p class="mb-4">"ha-satan" is working with God, not against Him. "Behold, all that he has is in your power; only do not put forth your hand on him" (Job 1:12). "Ha Satan" cannot act without divine consent. Satan is treated as part of the divine court, a kind of prosecuting attorney.</p>
+            <p class="font-bold mb-2">God Himself sends "ha satan":</p>
+            <p class="mb-4">God sends an adversary to stop Balaam. "And God's anger was kindled because he went, and the angel of the Lord stood in the way for an adversary against him" (Numbers 22:22). In Hebrew, the phrase "stood in the way for an adversary" is *satan lo*, meaning literally: "as a satan to him," or "as an adversary to him."</p>
+            <p class="font-bold mb-2">Contradictory Census Stories</p>
+            <p class="mb-2">The Satan Incites David to Take a Census (1 Chronicles 21:1): "And ha-satan stood up against Israel, and provoked David to number Israel." - Septuagint</p>
+            <p class="mb-4">God Incites David to Take a Census (2 Samuel 24:1): "And again the anger of the Lord burned against Israel, and He moved David against them, saying, 'Go, number Israel and Judah.'"</p>
+            <p class="mb-4">Is God the tempter? Or is Satan the inciter? Either way, God commands the murders of 70,000 Israelites—not soldiers, but citizens—for a census He either ordered or allowed, depending on which version you read.</p>
+            <p class="font-bold mb-2">Lucifer Never Existed</p>
+            <p class="mb-4">The word "<strong class="font-bold">Lucifer</strong>" appears only once in the Bible (Isaiah 14:12), and it's a mistranslation of "Helel ben Shachar," meaning "shining one, son of the dawn." It was originally about the king of Babylon and his arrogance and downfall, not about an angel. The idea of Lucifer as a rebellious angel came from much later Christian misinterpretation.</p>
+            <p class="mb-4">Ezekiel 28:2-10 is often cited as describing Lucifer, but it explicitly talks about the king of Tyre, not a rebellious angel.</p>
+
+            <h3 id="how-old-bible" class="text-xl font-bold mt-8 mb-4">How Old Is the Bible?</h3>
+            <p class="mb-4">Genesis to Deuteronomy was written and edited around <strong class="font-bold">600–400 BCE</strong>, during and after the Babylonian exile. Earlier oral traditions were compiled and redacted by priestly editors trying to establish religious identity and control. Much of what's in there reflects Babylonian myth, Canaanite laws, and later political agendas, not timeless divine truths.</p>
+
+            <h3 id="jephthahs-vow" class="text-xl font-bold mt-8 mb-4">Jephthah's Vow</h3>
+            <p class="mb-4">Jephthah's sacrifice of his daughter in Judges 11:29–40 is disturbing and tragic. Dismissing apologists' interpretations, we can see the Septuagint reveals the very literal account of what happened in these verses.</p>
+            <p class="mb-4">"If You shall indeed deliver the children of Ammon into my hand, then it shall be that whoever comes forth from the doors of my house to meet me when I return in peace from the children of Ammon, shall be the Lord's, and I will offer them as a <strong class="font-bold">whole burnt offering</strong>." (Judges 11:30–31)</p>
+            <p class="mb-4">The Greek phrase for "whole burnt offering" is: <strong class="font-bold">holokautoma</strong> - the same word used in Leviticus for animal sacrifices fully burned on the altar. It is never used metaphorically. It always means literal incineration, meaning a literal burnt sacrifice, consumed by fire.</p>
+            <p class="font-bold mb-2">Fulfillment of the Vow</p>
+            <p class="mb-4">"And Jephthae came to Mizpeh to his house, and behold, his daughter came out to meet him with timbrels and dances: and she was his only child, he had no son or daughter besides.</p>
+            <p class="mb-4">When he saw her, he rent his garments, and said: 'Alas, my daughter! thou hast brought me very low, and thou art become my adversary: for I have opened my mouth to the Lord, and I cannot go back.'</p>
+            <p class="mb-4">And she said unto him: 'My father, thou hast opened thy mouth to the Lord: do unto me according to that which hath proceeded out of thy mouth; forasmuch as the Lord hath taken vengeance for thee on thine enemies, even the children of Ammon.'</p>
+            <p class="mb-4">And she added: 'Let this thing be done for me: let me alone two months, that I may go up and down on the mountains, and bewail my virginity, I and my companions.'</p>
+            <p class="mb-4">And he said: 'Go.' And he sent her away for two months; and she departed, she and her companions, and bewailed her virginity on the mountains.</p>
+            <p class="mb-4">And it came to pass at the end of two months, she returned to her father, and he did to her according to the vow which he had vowed. And she had not known a man." (Judges 11:34-39)</p>
+            <p class="mb-4">The phrase "he did to her according to the vow" is clear in Greek as well: "He did to her the vow that had been made."</p>
+            <p class="mb-4">"And she was mourned: the daughters of Israel went from year to year to bewail the daughter of Jephthah the Galaadite four days in a year." (Judges 11:40)</p>
+            <p class="font-bold mb-2">What's Important About the Septuagint Reading</p>
+            <p class="mb-4">The Greek translators did not reinterpret the passage or try to soften it. "<strong class="font-bold">Holokautoma</strong>" is the same word used elsewhere in the Septuagint to describe actual animal sacrifices (consumed by fire). There's no hint of symbolic interpretation, celibate service, or spiritual dedication, leaving no ambiguity that Jephthah intended a literal human offering.</p>
+            <p class="mb-4">The phrasing matches that used to describe literal human sacrifice in pagan cultures and mirrors the Greek tragic tradition, such as Agamemnon sacrificing his daughter Iphigenia (Euripides, 405 BCE vs. 1200–800 BCE).</p>
+            <p class="mb-4">The Septuagint confirms the plain reading of the Hebrew: Jephthah made a reckless vow. His daughter was the first to greet him. He sacrificed her as a burnt offering (550–450 BCE).</p>
+            <p class="mb-4">There's no divine intervention, no condemnation, no symbolic workaround—just a stark, silent horror that the biblical God permits without comment.</p>
+            <p class="mb-4">It's one of the strongest pieces of evidence of <strong class="font-bold">moral contradiction and silence from YHWH</strong> in the face of atrocity.</p>
+
+            <h3 id="genocidal-commands" class="text-xl font-bold mt-8 mb-4">Genocidal Commands</h3>
+            <p class="mb-4">"Now go, and you shall utterly destroy Amalek, and all that he has; you shall not spare him, and you shall utterly destroy from man to woman, from infant to suckling, from calf to sheep, from camel to donkey." (1 Samuel 15:3 – Septuagint)</p>
+            <p class="font-bold mb-2">Baby Killing</p>
+            <p class="mb-4">"Blessed the one who seizes your children and smashes them against the rock" (Psalm 137:9)</p>
+            <p class="mb-4">Here, YHWH explicitly commands the murder of infants and nursing babies along with adults and animals.</p>
+            <p class="font-bold mb-2">Killing Children to Spite Parents</p>
+            <p class="mb-4">"Samaria shall become desolate; for she hath rebelled against her God: they shall fall by the sword, their infants shall be dashed in pieces, and their women with child shall be ripped up." (Hosea 13:16)</p>
+            <p class="font-bold mb-2">God's Punishment: Causing Cannibalism</p>
+            <p class="mb-2">"And ye shall eat the flesh of your sons, and the flesh of your daughters shall ye eat." (Leviticus 26:29)</p>
+            <p class="mb-4">"And I will cause them to eat the flesh of their sons and the flesh of their daughters..." (Jeremiah 19:9)</p>
+            <p class="mb-4">God permits slavery, especially of foreigners, and allows and guides the sexual use of captive women without their consent:</p>
+            <p class="mb-4">"Now therefore kill every male among the little ones, and kill every woman who has known a man. But all the young girls who have not known man by lying with him, keep alive for yourselves." (Numbers 31:17–18)</p>
+            <p class="mb-4">The God who is supposedly loving (1 John 4:8), cannot lie (Titus 1:2), and perfect (Deuteronomy 32:4), who then commands slavery, genocide, and allows rape, deception, and human sacrifice, isn't a loving God at all. In fact, he is an evil, genocidal, despicable tyrant.</p>
+            <p class="mb-4">On the other hand, if he doesn't really exist but was created by men as a theological weapon to justify conquests of genocide and control of people, then the inconsistencies in tone that change throughout each book would be easily explainable. One writer could see God as a warrior, while the next could see him as a distant ruler, and another as a lawgiver. These inconsistencies become less about divine contradictions and more about <strong class="font-bold">human fingerprints</strong>.</p>
+
+            <h3 id="scientific-data" class="text-xl font-bold mt-8 mb-4">Scientific Data on Biblical Claims</h3>
+            <p class="mb-4">For centuries, debate has raged over fundamental questions about our world - whether the earth is flat or spherical, stationary or rotating. Even in the face of technological advances, objective data, and demonstrable facts, some continue to argue for ancient cosmological models based largely on biblical passages such as Psalm 104:5 ("He has established the earth on its foundations; It will not be moved"), Isaiah 11:12 ("the four corners of the earth"), and Genesis 1:6-8 (describing a solid "firmament" or dome over the earth).</p>
+            <p class="mb-4">These biblical descriptions reflect the ancient Near Eastern cosmology of their time - a flat, immovable earth covered by a solid dome, with waters above and below. However, modern scientific methods provide definitive evidence that contradicts this biblical worldview, revealing the limitations of ancient texts when confronted with empirical reality.</p>
+            <p class="font-bold mb-2">Disproving the Flat Earth</p>
+            <p class="font-bold mb-2">Ship Disappearance Over Horizon</p>
+            <p class="mb-4">As ships sail away, they disappear bottom-first, not all at once. This only makes sense if there's curvature — on a flat plane, they'd just get smaller and maintain their proportions. You can test this at the ocean with binoculars or a camera.</p>
+            <p class="font-bold mb-2">Eratosthenes' Shadow Experiment (240 BCE)</p>
+            <p class="mb-4">In Egypt, Eratosthenes measured the sun's angle in two cities 500 miles apart on the same day. One city (Syene) had no shadow at noon, while the other (Alexandria) had a 7.2° shadow. He used simple geometry to calculate Earth's circumference and got it nearly spot-on — 25,000 miles. You can recreate this using sticks and shadows.</p>
+            <p class="font-bold mb-2">Airplane Flight Paths</p>
+            <p class="mb-4">The shortest route between two distant cities is a curved path on a flat map — because maps are flattened versions of a globe. These flight paths match great circles on a globe, not straight lines on flat maps.</p>
+            <p class="font-bold mb-2">Curvature Drop Formula</p>
+            <p class="mb-4">You can calculate how much the Earth "drops" over a distance: Drop (in feet) approximately equals 8 times (miles) squared. Example: at 10 miles away, an object would be 800 feet below the horizon (assuming no elevation). This explains why tall buildings or mountains vanish bottom-up from far distances.</p>
+            <p class="font-bold mb-2">Time Zones and Star Movements</p>
+            <p class="mb-4">If the Earth were flat, the sun would rise and set at the same time everywhere — it doesn't. Time zones work because of a rotating sphere. Stars also rotate around the celestial poles, and different constellations appear in the northern vs. southern hemisphere.</p>
+            <p class="font-bold mb-2">Earth Rotation</p>
+            <p class="mb-4">A <strong class="font-bold">ring laser gyroscope (RLG)</strong> detects rotational movement — specifically, angular velocity — by using the interference of two laser beams traveling in opposite directions around a closed loop. If the device is rotating, one beam will have to travel slightly farther than the other due to the Sagnac effect. The interference pattern (called a "beat frequency") reveals the rate and axis of rotation.</p>
+            <p class="font-bold mb-2">How Does This Relate to Earth's Rotation?</p>
+            <p class="mb-4">If Earth is spinning, the laser ring gyro — when fixed to the surface — will detect a constant angular rotation of approximately <strong class="font-bold">15 degrees per hour</strong>, corresponding to Earth's 360°/24h spin. That's exactly what is observed in highly sensitive RLGs.</p>
+            <p class="font-bold mb-2">Proof That the Earth, Not the Sun, Is Moving</p>
+            <p class="mb-4">If the Earth were stationary and the Sun was orbiting us, a laser gyro on Earth should not detect any rotation — because the Earth wouldn't be spinning. But it does. Always. The angular rotation detected by the laser ring gyro is not coming from the stars or the Sun — it's consistent with the Earth rotating on its own axis.</p>
+            <p class="font-bold mb-2">Real-World Example: Bob Knodel's Gyro</p>
+            <p class="mb-4">This was featured in the 2018 documentary *Behind the Curve*, where a flat-earther used a $20,000 fiber optic gyroscope. His team expected zero rotation if the Earth was flat and still. Result? The gyro detected 15°/hour rotation — exactly matching Earth's spin. He said: "We were taken aback. We didn't expect that." They tried to "shield" it in various ways (placing it in a container called a "Faraday cage") to blame the stars or celestial energy — but nothing changed the result.</p>
+            <p class="mb-4">A laser ring gyroscope directly measures Earth's rotation. If Earth were truly fixed, there would be no signal — yet it consistently measures 15° per hour, confirming that the Earth rotates and the Sun is not orbiting us.</p>
+            <p class="font-bold mb-2">Biblical Cosmology: Earth Flat and Stationary</p>
+            <p class="mb-4">Both the Septuagint (LXX) and modern translations contain wording that reflects ancient Hebrew cosmology — which portrays the Earth as flat, immovable, and covered by a dome (firmament).</p>
+            <p class="font-bold mb-2">Septuagint Evidence for Flat Earth Cosmology</p>
+            <p class="font-bold mb-2">The Earth as Fixed and Immovable</p>
+            <p class="mb-2">Psalm 103:5 (LXX numbering): "Who establishes the earth on its firmness; it shall not be moved forever."</p>
+            <p class="mb-4">Ancient Greek: "ὁ θεμελιῶν τὴν γῆν ἐπὶ τὴν ἀσφάλειαν αὐτῆς· οὐ κλιθήσεται εἰς τὸν αἰῶνα τοῦ αἰῶνος."</p>
+            <p class="mb-4">This mirrors Hebrew Psalm 104:5 and reflects a cosmology where the Earth is on solid, unshakable foundations — not rotating or orbiting.</p>
+            <p class="font-bold mb-2">The Dome (Firmament)</p>
+            <p class="mb-2">Genesis 1:6-8 (LXX): "And God said, Let there be a firmament in the midst of the water... And God made the firmament..."</p>
+            <p class="mb-4">Greek word: <strong class="font-bold">στερέωμα</strong> (stereōma) — literally means "a solid structure" or "something firm."</p>
+            <p class="mb-4">Not just "sky" — this conveys a hard, physical dome-like vault.</p>
+            <p class="font-bold mb-2">Heaven Above, Sheol Below — Vertical Cosmology</p>
+            <p class="mb-2">Deuteronomy 5:8 (LXX): "...in heaven above, and in the earth beneath, and in the waters under the earth."</p>
+            <p class="mb-4">Ancient three-tier model: Heaven (sky), Flat Earth, Underworld/Sheol beneath — all stacked vertically.</p>
+            <p class="font-bold mb-2">Modern Translations Still Reflect Flat Earth</p>
+            <p class="font-bold mb-2">Earth Is Fixed and Unmovable</p>
+            <p class="mb-2">Psalm 104:5: "He has established the earth on its foundations; It will not be moved from its place forever and ever."</p>
+            <p class="mb-4">Same message: Earth is stationary. No orbit, no spin.</p>
+            <p class="font-bold mb-2">The Solid Dome (Firmament)</p>
+            <p class="mb-2">Genesis 1:6: "Let there be an expanse between the waters..."</p>
+            <p class="mb-4">"Expanse" is a softened translation of *raqia* (רָקִיעַ), but the original Hebrew indicates something beaten out like metal — reinforcing the solid-dome view.</p>
+            <p class="font-bold mb-2">Four Corners and Ends of the Earth</p>
+            <p class="mb-2">Isaiah 11:12: "...gather together the dispersed ones of Judah from the four corners of the earth."</p>
+            <p class="mb-4">This idiom reflects flat-earth thinking — you don't get corners on a sphere.</p>
+            <p class="mb-2">Job 38:13: "...to take hold of the ends of the earth..."</p>
+            <p class="mb-4">Again, "ends" implies an edge — not a globe.</p>
+            <p class="mb-4">The Bible's cosmology is not heliocentric. It reflects ancient Mesopotamian and Hebrew worldview, where the Earth was a flat disc, unmoving, covered by a hard dome, with waters above and the abyss below. This stands in direct contradiction to demonstrable scientific evidence about Earth's actual shape, movement, and position in the solar system.</p>
+
+            <h3 id="name-jehovah" class="text-xl font-bold mt-8 mb-4">IMPORTANT NOTE - THE NAME "JEHOVAH"</h3>
+            <p class="mb-4">The name "<strong class="font-bold">Jehovah</strong>" is a late invention based on a misinterpretation and mispronunciation of the original Hebrew name <strong class="font-bold">YHWH</strong>. This name was considered too sacred to pronounce, so Jews began saying "<strong class="font-bold">Adonai</strong>," meaning "Lord," whenever they saw YHWH written. Around the 7th–10th centuries CE, Jewish scribes (Masoretes) added vowel points to the consonantal Hebrew text to preserve pronunciation.</p>
+            <p class="mb-4">But for YHWH, they inserted the vowels of "Adonai"—a replacement word—under the letters YHWH, not to indicate how to pronounce the name, but as a reminder to say Adonai instead. So you'd get something like this hybrid form: YeHoWaH</p>
+            <p class="mb-4">Medieval Christian scholars didn't understand that this was a mash-up and mistakenly combined the consonants of YHWH with the vowels of Adonai, resulting in: YeHoWaH. In Latinized form: Jehovah (since Latin had no "Y," it used "J," and "W" became "V").</p>
+            <p class="mb-4">Thus, "<strong class="font-bold">Jehovah</strong>" is a linguistic Frankenstein—a false hybrid of consonants from YHWH, vowels from Adonai, creating the invented name: Jehovah.</p>
+            <p class="font-bold mb-2">Why "Jehovah" Is Incorrect</p>
+            <p class="mb-4">It violates the intent of the Masoretes; the vowels were a signal to not pronounce the name at all. Most scholars today agree it's a completely artificial word.</p>
+
+            <h3 id="jesus-and-yhwh" class="text-xl font-bold mt-8 mb-4">EQUALLY IMPORTANT - JESUS AND YHWH</h3>
+            <p class="mb-4">Jesus never says the name YHWH, not even once. He does use:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>"Theos" (God)</li>
+                <li>"Pater" (Father)</li>
+                <li>"Abba" (Aramaic for Father)</li>
+                <li>"Heavenly Father"</li>
+                <li>"Lord of Heaven and Earth"</li>
+            </ul>
+            <p class="mb-4">Not once does Jesus speak the divine name YHWH or encourage others to. For a Jew raised under Mosaic Law, where YHWH is central, this is a glaring omission, especially because many of his teachings directly conflict with laws said to come from YHWH (e.g., "You have heard it said... but I say to you...").</p>
+            <p class="font-bold mb-2">Jesus and Melchizedek: A Non-YHWH Priesthood</p>
+            <p class="mb-4">Melchizedek is introduced in Genesis 14 and expanded in Hebrews as a figure of spiritual significance who predates and outranks the Levitical priesthood.</p>
+            <p class="mb-4">Genesis 14: Melchizedek is king of Salem and priest of <strong class="font-bold">El Elyon</strong> (God Most High), not YHWH. He blesses Abraham in the name of El Elyon, not YHWH. "Blessed be Abram of El Elyon, possessor of heaven and earth..." (Genesis 14:19)</p>
+            <p class="mb-4">Hebrews 7 (NT): Jesus is said to be a priest in the order of Melchizedek: "Jesus, as our forerunner, has entered the heavenly sanctuary as a high priest forever, after the order of Melchizedek" (Hebrews 6:20), not Levi or Aaron, the priesthood under YHWH's law. This implies Jesus inherits a higher, older, non-YHWH priesthood.</p>
+            <p class="font-bold mb-2">Possible Animosity or Opposition to YHWH</p>
+            <p class="mb-4">"You have heard it said... but I say to you..." Jesus contradicts Mosaic Law multiple times:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>"An eye for an eye" → "Turn the other cheek"</li>
+                <li>"Hate your enemy" → "Love your enemies"</li>
+                <li>Divorce rules, Sabbath laws, oaths, vengeance — all rejected.</li>
+            </ul>
+            <p class="mb-4">These were YHWH's laws, given to Moses — yet Jesus rewrites or rebukes them.</p>
+            <p class="mb-4">"You are of your father, the devil... he was a murderer from the beginning." (John 8:44)</p>
+            <p class="mb-4">Jesus says this to religious leaders who followed the Law of Moses — the law of YHWH. He does not affirm that YHWH is their father — instead he links their law to murder and deception.</p>
+            <p class="font-bold mb-2">Jesus' Statement</p>
+            <p class="mb-4">"Which of you fathers, if your son asks for a fish, will give him a serpent instead? Or if he asks for an egg, will give him a scorpion? If you then, being evil, know how to give good gifts to your children, how much more will your Father in heaven give the Holy Spirit to those who ask Him?" (Luke 11:11–13)</p>
+            <p class="mb-4">This is often read as a parable about God's generosity, but there's an undertone if you read it as Jesus mocking YHWH's historical behavior.</p>
+            <p class="font-bold mb-2">Jesus May Be Mocking YHWH's Behavior</p>
+            <p class="mb-4">"Then the Lord sent venomous snakes among them; they bit the people and many Israelites died." (Numbers 21:6)</p>
+            <p class="mb-4">This happened because the Israelites complained about their food and conditions in the wilderness — a fairly human reaction. YHWH responded by sending fiery serpents to kill them.</p>
+            <p class="font-bold mb-2">"Only I Know the Father"</p>
+            <p class="mb-4">"No one knows the Father except the Son, and no one knows the Son except the Father..." (Matthew 11:27)</p>
+            <p class="mb-4">If YHWH had revealed himself to Moses, Abraham, and prophets... how would no one know the Father except Jesus? This implies that the true God was not known before Jesus — possibly a critique of YHWH as a false or incomplete deity.</p>
+            <p class="mb-4">Yet the Old Testament clearly states:</p>
+            <p class="mb-2">"I am YHWH. I appeared to Abraham, to Isaac, and to Jacob as El Shaddai, but by My name YHWH I did not make Myself known to them." (Exodus 6:2–3)</p>
+            <p class="mb-2">"Then YHWH came down upon Mount Sinai, to the top of the mountain." (Exodus 19:20)</p>
+            <p class="mb-4">The people see fire, smoke, thunder, and hear His voice. YHWH gives the Ten Commandments directly to the people before they ask Moses to speak instead, fearing for their lives.</p>
+            <p class="mb-2">"You cannot see My face, for man shall not see Me and live... I will cover you with My hand until I have passed by." (Exodus 33:20–23)</p>
+            <p class="mb-4">YHWH reveals Himself explicitly, either by name, by voice, or in some dramatic manifestation.</p>
+            <p class="font-bold mb-2">A High Priest in the Order of Melchizedek, Not Levi</p>
+            <p class="mb-4">Again, Hebrews 5:6 (also echoed in Hebrews 7:17 and 7:21): "You are a priest forever after the order of Melchizedek."</p>
+            <p class="mb-4">This is a quotation from Psalm 110:4, which in the Septuagint (LXX) reads: "The Lord has sworn and will not repent, 'You are a priest forever according to the order of Melchizedek.'" (LXX: Psalm 109:4, because the numbering differs slightly in the Greek)</p>
+            <p class="mb-4">In Hebrews, this verse is used to show that Jesus is appointed by divine oath to a priesthood that predates and surpasses the Levitical line — a higher, eternal priesthood directly under El Elyon, as seen in Genesis 14 when Melchizedek blesses Abraham in the name of God Most High (El Elyon).</p>
+            <p class="mb-4">The Melchizedek priesthood was superior to and predated the Levitical priesthood. When Jesus cleansed the temple, performed priestly functions, and claimed divine authority, the Jewish leaders saw this as blasphemy and a priestly authority that superseded theirs entirely.</p>
+            <p class="mb-4">The claim to be Messiah alone wasn't blasphemous under Jewish law, but Jesus went further - claiming to be "the Son of God" and the coming judge, which was considered a claim for deity and a priestly authority that made their entire religious system obsolete.</p>
+            <p class="mb-4">They absolutely understood what he was claiming - and that's exactly why they killed him for it.</p>
+            <p class="font-bold mb-2">The Name YHWH</p>
+            <p class="mb-4">The <strong class="font-bold">Tetragrammaton</strong>, or its Latinized form Jehovah, never appears in the original Greek New Testament manuscripts.</p>
+            <p class="mb-4">The New World Translation inserts "Jehovah" into the New Testament 237 times, even though no Greek manuscript supports this and they do not contain it at all.</p>
+            <p class="mb-4">Their justification is doctrinal, not textual. Only a small number of modern, non-mainstream religious groups (Jehovah's Witnesses and Sacred Name movements) insert YHWH or Jehovah into the New Testament. These insertions are doctrinal choices, not backed by any known Greek manuscripts.</p>
+        </section>
+
+        <hr class="elegant-line mb-12">
+
+        <!-- The New Testament Section -->
+        <section id="new-testament" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">THE NEW TESTAMENT</h2>
+            <p class="mb-4">The New Testament presents its own set of challenges and contradictions that undermine claims of divine authorship.</p>
+
+            <h3 id="revelation-freaky-book" class="text-xl font-bold mt-8 mb-4">Revelation: A Freaky Book</h3>
+            <p class="mb-4">Revelation quickly crumbles under pressure. A lot of it is copied straight from Daniel—not just the theme, but the symbolism and the structure.</p>
+            <p class="mb-4">For instance:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>The beasts with horns (Daniel 7:7) vs. (Revelation 13:1)</li>
+                <li>Time prophecies like "a time, times, and half a time" (Daniel 7:25) vs. (Revelation 12:14)</li>
+                <li>The son of man imagery (Daniel 7:13) vs. (Revelation 1:13)</li>
+            </ul>
+            <p class="mb-4">It's basically a direct copy of Daniel, and even worse, it wasn't even written by the apostle John, but rather written by some guy named <strong class="font-bold">John of Patmos</strong>.</p>
+            <p class="mb-4">Stylistic analysis (stylography), which studies writing style, grammar, and vocabulary, confirms this John couldn't have written the Book of John or any others because they are wildly different in tone and style. This discredits the whole idea of single authorship.</p>
+            <p class="mb-4">As for the date it was most likely written: around <strong class="font-bold">95 AD</strong>, decades after Jesus' time.</p>
+
+            <h3 id="epistles" class="text-xl font-bold mt-8 mb-4">The Epistles</h3>
+            <p class="font-bold mb-2">The Fictional Foundations</p>
+            <p class="mb-4">Between Revelation and the Gospels are the letters attributed to Paul.</p>
+            <p class="mb-4">The only thing is Paul, previously known as Saul of Tarsus, the notorious Christian persecutor, might not have even been real. Despite allegedly being a renowned persecutor of Christians, there is <strong class="font-bold">no historical record or evidence that Paul ever existed at all outside the Bible</strong>. The only supporting evidence for his existence is in the narratives in these writings that are claimed to be his, like a character in a story.</p>
+            <p class="mb-4">Most biblical scholars in the world agree that of the 13 letters attributed to him, only <strong class="font-bold">7 are considered "undisputedly" similar enough</strong> to be written by a single author. The rest are widely believed to be forgeries, written in his name to establish theological authority (1 & 2 Timothy, Titus).</p>
+            <p class="mb-4">Paul never met Jesus, and his entire theology is based on "a very bright light" and a voice that said 'Saul, Saul, why are you persecuting Me?' Then he was blinded for three days, and as the story goes, he was led by hand to Damascus where Christ instructs him to wait. During this time, Acts 9:10-16, the Lord appeared to Ananias in a vision and instructed him to go to a house on Straight Street in Damascus, where Saul was staying. He found Saul, laid his hands on him, and said, "Brother Saul, the Lord Jesus, who appeared to you on the road as you were coming here, has sent me so that you may regain your sight and be filled with the Holy Spirit." Then scales fell from Saul's eyes, and he could see again.</p>
+            <p class="font-bold mb-2">Signs and Wonders</p>
+            <p class="mb-4">But... we have two completely different Ananias characters:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Jerusalem church member with his wife Sapphira</li>
+                <li>They lie about their land sale then proceed to drop dead when Peter confronts them</li>
+                <li>This happens early in Acts, after Pentecost</li>
+            </ul>
+            <p class="font-bold mb-2">Acts 9 Ananias:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Lives in Damascus</li>
+                <li>Described as a devout man, according to the law, well spoken of by all the Jews</li>
+                <li>Heals Paul's blindness after his conversion</li>
+                <li>Shows up as a random, otherwise unknown disciple</li>
+            </ul>
+            <p class="font-bold mb-2">The Problems:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li><strong class="font-bold">Same uncommon name</strong> - Ananias wasn't a super common name, so having two significant characters with identical names in the same narrative is very suspicious.</li>
+                <li><strong class="font-bold">No explanation</strong> - Luke (the supposed author) never acknowledges or clarifies "this is a different Ananias." Any competent historian would distinguish between them.</li>
+                <li><strong class="font-bold">Timing issues</strong> - If Acts 5 Ananias is dead, how does Acts 9 Ananias exist? If they're different people, why not use different names?</li>
+                <li><strong class="font-bold">Literary convenience</strong> - It's awfully convenient that there's always an "Ananias" available whenever the plot needs one.</li>
+            </ul>
+            <p class="mb-4">So either the author was sloppy with character consistency, or these stories were compiled from different sources without proper editing, or the whole thing is a constructed narrative where names got recycled because the author wasn't keeping track of a real historical timeline. It's exactly the kind of mistake you'd expect in assembled mythology rather than eyewitness historical accounts. Real history doesn't have this kind of character confusion.</p>
+            <p class="font-bold mb-2">Problems with Paul's Conversion Narrative:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li><strong class="font-bold">Too complete, too fast</strong> - Real psychological conversions, even dramatic ones, usually involve gradual shifts.</li>
+                <li><strong class="font-bold">No cognitive dissonance period</strong> - Someone that intellectually invested doesn't just flip worldviews instantly without struggling to reconcile contradictions.</li>
+                <li><strong class="font-bold">Sustained motivation</strong> - The zeal never wavers over decades. Real converts typically have periods of doubt, backsliding, or at least some complexity.</li>
+            </ul>
+            <p class="mb-4">But for Paul... just a complete 180-degree ideological flip, no worries...</p>
+            <p class="font-bold mb-2">Elements that could indicate fiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>The Damascus road story reads like classical "divine intervention" literature</li>
+                <li>Three different versions of the story in Acts with contradictory details</li>
+                <li>Paul's letters barely mention this dramatic conversion - he's surprisingly vague about specifics</li>
+                <li>The psychological profile is too clean, too archetypal (persecutor → greatest apostle)</li>
+            </ul>
+            <p class="mb-4">And these writings basically invent Christian doctrine before the Gospels were even written.</p>
+            <p class="mb-4">These writings are the earliest voice about Jesus, written decades before Matthew, Mark, Luke, or John.</p>
+            <p class="mb-4">And in those writings, there's a surprising lack of personal information about Jesus:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>No virgin birth</li>
+                <li>No parables</li>
+                <li>No Sermon on the Mount</li>
+                <li>No miracles</li>
+                <li>No trial before Pilate</li>
+            </ul>
+            <p class="mb-4">Instead, Paul presents a cosmic Christ figure, not a historical teacher.</p>
+
+            <h3 id="gospels" class="text-xl font-bold mt-8 mb-4">The Gospels</h3>
+            <p class="mb-4">Don't get any better.</p>
+            <p class="mb-4">Matthew, Mark, Luke, and John are not eyewitness accounts. They weren't even written until decades after the events they describe, and the authors were completely unknown; the names were not added to them until much later.</p>
+            <p class="mb-4">The Gospels are said to offer the only portrayal of Jesus that exists. But what they actually offer is their own completely contradictory version of the same story—one that never really agrees with itself on anything, including basic facts, timelines, geography, genealogy, and resurrection. All wildly inconsistent.</p>
+            <p class="mb-4">For example:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li><strong class="font-bold">Mark</strong> is the earliest Gospel written (<strong class="font-bold">70 AD</strong>) but the shortest. It ends abruptly, with the earliest manuscripts having no post-resurrection appearance (Mark 16:8).</li>
+                <li>Both <strong class="font-bold">Matthew</strong> (80-85 CE) and <strong class="font-bold">Luke</strong> (80-85 CE) borrow heavily from Mark, sometimes copying it word for word, with some added contradictions.</li>
+                <li>Matthew 5-7 describes the Sermon on the Mount, specifically on a mountainside.</li>
+                <li>Luke 6:17 describes the Sermon on a plain, specifically described as a level place.</li>
+                <li>Matthew traces Jesus' bloodline through Joseph to Abraham (Matthew 1:1–16).</li>
+                <li>But Luke traces it to Adam (Luke 3:23–38).</li>
+                <li><strong class="font-bold">John</strong>, written last (<strong class="font-bold">90–100 AD</strong>), portrays Jesus as a more mystical, divine, and philosophical version who speaks in abstract monologues. Compare to the abrupt, cryptic parables in Matthew, Mark & Luke.</li>
+            </ul>
+            <p class="font-bold mb-2">Jesus' Red Letters - Contradictory Dialogue</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>"Let your light shine before men" (Matthew 5:16) vs. "Do not practice righteousness before others to be seen by them" (Matthew 6:1).</li>
+                <li>"I judge no one" (John 8:15) vs. "the Father judges no one, but has entrusted all judgment to the Son" (John 5:22).</li>
+                <li>"My kingdom is not of this world" (John 18:36) vs. "Truly I tell you, at the renewal of all things, when the Son of Man sits on his glorious throne, you who have followed me will also sit on twelve thrones, judging the twelve tribes of Israel" (Matthew 19:28).</li>
+            </ul>
+            <p class="font-bold mb-2">Final Words</p>
+            <p class="mb-2">What did Jesus say?</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>"My God, my God, why have you forsaken me?" (Matthew 27:46)</li>
+                <li>"Eloi, Eloi, lama sabachthani?" (Mark 15:34)</li>
+                <li>"Father, into your hands I commit my spirit." (Luke 23:46)</li>
+                <li>"It is finished." (John 19:30)</li>
+            </ul>
+            <p class="font-bold mb-2">The Tomb</p>
+            <p class="mb-2">Who found Jesus?</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Mary Magdalene and "the other Mary" - Matthew (28:1)</li>
+                <li>Mary Magdalene, Mary the mother of James, and Salome - Mark (16:1)</li>
+                <li>Mary Magdalene, Joanna, Mary the mother of James, and others - Luke (24:10)</li>
+                <li>Only Mary Magdalene - John (20:1)</li>
+            </ul>
+            <p class="font-bold mb-2">Resurrection</p>
+            <p class="mb-2">Who went to the tomb? One woman or three? One angel or two? Or a man in white?</p>
+            <p class="mb-4">Did Jesus appear to the disciples in Galilee or Jerusalem?</p>
+            <p class="mb-4">These are not minor contradictions. They are not things you can just explain away.</p>
+
+            <h3 id="crucifixion-contradictions" class="text-xl font-bold mt-8 mb-4">Contradictions Between Jesus' Crucifixion and Historical Roman Crucifixions</h3>
+            <p class="font-bold mb-2">Time Until Death</p>
+            <p class="font-bold mb-2">Historical Fact:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Crucifixions were meant to last many hours to several days.</li>
+                <li>Victims could survive up to three days, slowly dying of asphyxiation, exposure, shock, and infection.</li>
+            </ul>
+            <p class="font-bold mb-2">Bible Claim:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Jesus dies in about 3–6 hours (Mark 15:25, 33–37).</li>
+                <li>Pilate is even surprised he died so quickly (Mark 15:44).</li>
+            </ul>
+            <p class="font-bold mb-2">Contradiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>That's far too fast for a crucified man — unless he was already near death beforehand (yet Jesus speaks multiple times on the cross).</li>
+                <li>No Roman record supports such a rapid crucifixion death without *crurifragium* (leg breaking), which Jesus did not get (John 19:33).</li>
+            </ul>
+            <p class="font-bold mb-2">Burial After Death</p>
+            <p class="font-bold mb-2">Historical Fact:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Crucified victims were almost never buried.</li>
+                <li>They were left to rot and be eaten by animals as a warning to others.</li>
+                <li>Burial was a privilege, not given to executed criminals or rebels.</li>
+            </ul>
+            <p class="font-bold mb-2">Bible Claim:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Jesus is buried the same day in a private tomb by a Sanhedrin member, Joseph of Arimathea (Mark 15:43–46).</li>
+            </ul>
+            <p class="font-bold mb-2">Contradiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>This violates Roman custom — rebels (especially those crucified) didn't get honored burials.</li>
+                <li>Also contradicts Jewish burial customs which would not allow touching a corpse before Sabbath.</li>
+            </ul>
+            <p class="font-bold mb-2">Treatment by Romans</p>
+            <p class="font-bold mb-2">Historical Fact:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Roman soldiers were brutal and did not care about Jewish religious customs.</li>
+                <li>Once sentenced, a person was dehumanized, publicly humiliated, and discarded.</li>
+            </ul>
+            <p class="font-bold mb-2">Bible Claim:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Romans respect Jewish customs (breaking legs before Sabbath, giving body to a Jew for burial).</li>
+                <li>Pilate is portrayed as hesitant, even sympathetic (John 19:12–16).</li>
+            </ul>
+            <p class="font-bold mb-2">Contradiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Romans didn't give a damn about appeasing Jewish tradition, and Pilate was known historically for cruelty, not hesitation.</li>
+            </ul>
+            <p class="font-bold mb-2">The Crown of Thorns and Mockery</p>
+            <p class="font-bold mb-2">Historical Fact:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>While mockery happened, the crown of thorns is not recorded in any Roman practice.</li>
+                <li>Dressing up a condemned man as a "king" was highly unusual unless it was state propaganda.</li>
+            </ul>
+            <p class="font-bold mb-2">Bible Claim:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Soldiers create a crown of thorns, purple robe, and mock Jesus as "King of the Jews" (Matthew 27:29).</li>
+            </ul>
+            <p class="font-bold mb-2">Contradiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>This feels theatrical and symbolic, likely added for theological meaning, not historical accuracy.</li>
+            </ul>
+            <p class="font-bold mb-2">The Presence of Women and Followers at the Cross</p>
+            <p class="font-bold mb-2">Historical Fact:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Crucifixions were held in isolated, guarded places.</li>
+                <li>No family or friends were allowed near the cross — it was dangerous, humiliating, and tightly controlled.</li>
+            </ul>
+            <p class="font-bold mb-2">Bible Claim:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Jesus' mother, Mary, other women, and even a beloved disciple are right near the cross (John 19:25–27).</li>
+            </ul>
+            <p class="font-bold mb-2">Contradiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>This wouldn't be allowed by Roman soldiers, especially not for rebels.</li>
+                <li>Also odd that none of the male disciples are arrested for association.</li>
+            </ul>
+            <p class="font-bold mb-2">Final Words from the Cross</p>
+            <p class="font-bold mb-2">Historical Fact:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Crucifixion victims could barely breathe, let alone speak clearly.</li>
+                <li>Most would groan, gurgle, or scream — no long speeches.</li>
+            </ul>
+            <p class="font-bold mb-2">Bible Claim:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Jesus gives seven distinct statements (depending on the Gospel), including:</li>
+                <li>"It is finished." (John 19:30)</li>
+                <li>"Father, forgive them..." (Luke 23:34)</li>
+                <li>"My God, why have you forsaken me?" (Mark 15:34)</li>
+            </ul>
+            <p class="font-bold mb-2">Contradiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>A man dying of crucifixion cannot articulate speeches, especially if he was scourged beforehand.</li>
+            </ul>
+            <p class="font-bold mb-2">Earthquake, Darkness, and Veil Tearing</p>
+            <p class="font-bold mb-2">Historical Fact:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>No Roman or Jewish historian (like Philo, Josephus, or Tacitus) mentions a massive earthquake, sky turning dark, or temple veil tearing during Jesus' crucifixion.</li>
+            </ul>
+            <p class="font-bold mb-2">Bible Claim:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>All these happen the moment Jesus dies (Matthew 27:45–51).</li>
+            </ul>
+            <p class="font-bold mb-2">Contradiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>These apocalyptic signs seem literary, symbolic, and unconfirmed by external sources.</li>
+            </ul>
+            <p class="font-bold mb-2">Different Crucifixion Accounts</p>
+            <p class="mb-2">The four Gospels all tell different stories about Jesus' crucifixion:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Mark: "Why have you forsaken me?" - Simon of Cyrene carries cross - Silent mostly</li>
+                <li>Luke: "Father forgive them..." and "Into your hands..." - Simon carries cross - Talkative</li>
+                <li>Matthew: Same as Mark - Simon carries cross - Silent</li>
+                <li>John: "It is finished." - Jesus carries it himself - Talks to mother, disciple</li>
+            </ul>
+            <p class="font-bold mb-2">Contradiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Either Jesus carried his cross or he didn't.</li>
+                <li>Either he was silent and abandoned, or calm and forgiving — can't be all of them.</li>
+            </ul>
+            <p class="font-bold mb-2">The Two Thieves</p>
+            <p class="font-bold mb-2">Bible Conflict:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>In Matthew 27:44 and Mark 15:32, both thieves mock Jesus.</li>
+                <li>But in Luke 23:39–43, one mocks, the other defends Jesus and is promised paradise.</li>
+            </ul>
+            <p class="font-bold mb-2">Contradiction:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Contradictory depiction of a key moment, suggesting literary invention.</li>
+            </ul>
+            <p class="font-bold mb-2">Conclusion</p>
+            <p class="mb-4">There is no reason to believe Jesus' crucifixion, as told in the Gospels, follows Roman historical practice. It:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Contradicts Roman legal procedures</li>
+                <li>Violates burial customs</li>
+                <li>Depicts unrealistic behavior of soldiers and victims</li>
+                <li>Is filled with symbolic and contradictory elements across Gospels</li>
+            </ul>
+            <p class="mb-4">It appears more like a crafted theological narrative designed to fulfill prophecy and portray Jesus as a divine martyr — not a real event recorded with accuracy.</p>
+
+            <h3 id="earliest-non-biblical" class="text-xl font-bold mt-8 mb-4">Earliest Non-Biblical Accounts of Jesus</h3>
+            <p class="font-bold mb-2">Josephus (c. 93–94 CE) — Jewish Historian</p>
+            <p class="mb-2">In *Antiquities of the Jews*, Book 18, Josephus mentions a man named Jesus:</p>
+            <p class="mb-4">"About this time lived Jesus, a wise man... a worker of amazing deeds... condemned to the cross by Pilate... His followers did not cease... the tribe of Christians, named after him, has not disappeared."</p>
+            <p class="mb-4">Most scholars believe the core of this <strong class="font-bold">Testimonium Flavianum</strong> is authentic, though later Christian scribes may have embellished it.</p>
+            <p class="font-bold mb-2">1. If a text is embellished, is it still trustworthy?</p>
+            <p class="mb-4">Not really — and here's why:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>If Christian scribes added details later, we can't separate the core from the contamination.</li>
+                <li>If no contemporary (30s–40s CE) source mentions Jesus, and the first mention is 60+ years later (Tacitus), then there's zero contemporaneous evidence.</li>
+                <li>Every single text is secondhand or hostile hearsay, meaning no one alive during Jesus's supposed ministry wrote anything about him.</li>
+            </ul>
+            <p class="mb-4">That's not what we'd expect for a man supposedly:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Performing mass healings and public miracles</li>
+                <li>Drawing huge crowds</li>
+                <li>Causing civic unrest</li>
+                <li>Raising the dead</li>
+                <li>Coming back from the grave</li>
+            </ul>
+            <p class="mb-4">Nothing in Roman or Jewish records from the 30s–40s CE says a word about any of that.</p>
+            <p class="font-bold mb-2">2. Were crucifixions common? Yes.</p>
+            <p class="mb-2">Crucifixion was a very real, brutal Roman execution method, used extensively:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>71 BCE: Spartacus' revolt – 6,000 crucified along Appian Way</li>
+                <li>4 BCE: Judas of Galilee's rebellion – 2,000 crucified</li>
+                <li>1st century CE: Josephus records mass crucifixions during Jewish War</li>
+                <li>70 CE: Siege of Jerusalem – thousands crucified by Titus</li>
+            </ul>
+            <p class="mb-2">Source: Josephus, *Jewish War* (written c. 75–79 CE)</p>
+            <p class="mb-4">"So many were crucified that there was no room for the crosses, and no crosses for the bodies." – *Jewish War* 5.11.1</p>
+            <p class="mb-2">So yes, crucifixion was common for:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Political rebels</li>
+                <li>Slaves and lower-class criminals</li>
+                <li>Messianic claimants (yes, plural)</li>
+            </ul>
+            <p class="font-bold mb-2">3. Other Stories of Crucified or Dying-Rising Figures</p>
+            <p class="mb-2">Many ancient religions and mythologies had dying-rising gods or divine men killed unjustly, and some involved executions:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li><strong class="font-bold">Inanna (Sumerian):</strong> Descends into underworld, killed, hung on a hook, resurrected (~2000 BCE)</li>
+                <li><strong class="font-bold">Osiris (Egyptian):</strong> Dismembered and resurrected by Isis (Ancient, pre-Jesus)</li>
+                <li><strong class="font-bold">Prometheus (Greek):</strong> Bound to a rock, tortured daily by Zeus (~5th c. BCE)</li>
+                <li><strong class="font-bold">Zalmoxis (Thracian / Scythia):</strong> God of immortality, disappears for 3 years, returns (Herodotus ~5th c. BCE)</li>
+                <li><strong class="font-bold">Romulus (Roman myth):</strong> Mysteriously vanishes, later "appears" in divine form (Pre-Jesus)</li>
+                <li><strong class="font-bold">Dionysus:</strong> Killed and reborn, often linked with suffering and resurrection (Pre-Jesus)</li>
+            </ul>
+            <p class="mb-4">Importantly: Crucifixion itself wasn't a common element in myth, but violent death and divine resurrection absolutely were.</p>
+            <p class="font-bold mb-2">4. So what could have happened?</p>
+            <p class="mb-2">Here's one plausible reconstruction grounded in brutal realism:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>There were multiple failed messiahs in 1st-century Judea (e.g., Theudas, the Egyptian prophet, Judas of Galilee).</li>
+                <li>Some of them were crucified by the Romans — a political warning.</li>
+                <li>A small cult may have formed around one such figure — possibly named Yeshua — after his death.</li>
+                <li>His story, over 40–70 years, became mythologized:</li>
+                <ul class="list-circle list-inside ml-6">
+                    <li>Miracles added</li>
+                    <li>Birth narrative invented (Matthew and Luke contradict)</li>
+                    <li>Resurrection story modeled on mythic templates (Osiris, Horus, Dionysus)</li>
+                    <li>Jesus eventually deified (as seen in Paul's letters)</li>
+                </ul>
+            </ul>
+            <p class="mb-4">By the time of Josephus (~93 CE) and Tacitus (~116 CE), the myth had hardened into "fact", but no one alive at the time of Jesus ever wrote about him.</p>
+            <p class="font-bold mb-2">Conclusion</p>
+            <p class="mb-2">Crucifixion was real and widely used by the Romans — but not unique to Jesus.</p>
+            <p class="mb-2">The earliest references to Jesus are late, secondhand, and tainted by agenda or later editing.</p>
+            <p class="mb-2">Multiple ancient myths involved dying and rising gods, many with more evidence than Jesus.</p>
+            <p class="mb-4">It is very possible that "Jesus" as we know him is a theological construction, built on scraps of a forgotten rebel, layered with myth and propaganda over decades.</p>
+
+            <h3 id="jesus-who" class="text-xl font-bold mt-8 mb-4">JESUS WHO?</h3>
+            <p class="font-bold mb-2">Historical Evidence for Jesus</p>
+            <p class="font-bold mb-2">Tacitus - *Annals*, written c. 116 CE</p>
+            <p class="mb-4">Roman historian Tacitus references *Christus* being executed under Pontius Pilate. Born c. 56 CE, Tacitus wrote nearly a century after the alleged crucifixion and never met Jesus. The term "procurator" is anachronistic — Pilate was a "prefect." No evidence confirms Tacitus used Roman records; the passage likely reflects Christian hearsay circulating decades after Jesus would have died.</p>
+            <p class="font-bold mb-2">Josephus - *Antiquities of the Jews*, c. 93–94 CE</p>
+            <p class="mb-4">Jewish historian Josephus allegedly described Jesus in the *Testimonium Flavianum*. Born 37 CE, Josephus never met Jesus and wrote over 60 years after the alleged events. The passage contains Christian phrases like "He was the Christ," widely viewed as later interpolations. Scholarly consensus holds the text was altered by Christian scribes.</p>
+            <p class="font-bold mb-2">Pliny the Younger - Letter to Emperor Trajan, c. 112 CE</p>
+            <p class="mb-4">Pliny writes about Christians worshipping Christ "as a god." This is not a historical account of Jesus, but a reference to Christian rituals. Pliny does not claim Jesus existed, nor does he name sources. His knowledge is derived from interrogations of Christians, writing over 80 years after Jesus would have died.</p>
+            <p class="font-bold mb-2">Suetonius - *Life of Claudius*, c. 121 CE</p>
+            <p class="mb-4">Suetonius states that Claudius expelled Jews from Rome due to disturbances caused by "Chrestus." "Chrestus" may be a misspelling of "Christus" or an entirely different person. There is no mention of Jesus, Christianity, crucifixion, or Galilee. The name was common, and the timeline is too early.</p>
+            <p class="font-bold mb-2">Lucian of Samosata - *The Death of Peregrinus*, c. 170 CE</p>
+            <p class="mb-4">Lucian mocks Christians for worshipping a "crucified sage." Lucian was a satirist writing over a century after Jesus' alleged death. His account is not based on historical investigation but on Christian beliefs. He never cites sources or details that confirm historicity.</p>
+            <p class="font-bold mb-2">Mara bar Serapion - Letter to his son, 1st to 3rd century CE</p>
+            <p class="mb-4">Refers to a "wise king" of the Jews who was executed. The figure is never named. No mention of Jesus, crucifixion, or resurrection. The letter is philosophical, not historical, and can refer to multiple possible figures. The date is uncertain and likely post-Christian.</p>
+            <p class="mb-4">The pattern is clear: every single reference to Jesus comes from writers who lived decades or centuries after his supposed death. None of these authors could have been eyewitnesses or had direct knowledge of Jesus. Their accounts reflect Christian beliefs and stories that had circulated for generations, not contemporary historical records.</p>
+
+            <h3 id="myth-before-myth" class="text-xl font-bold mt-8 mb-4">The Myth Before the Myth: Ancestral Shadows of the Christ Figure</h3>
+            <p class="mb-4">Long before the gospels, the ancient world echoed with stories of gods who died, descended, and returned again — deities who offered salvation, taught divine mysteries, healed the sick, and triumphed over death. Though none of these myths mirror the Jesus story point for point, they form a cultural and mythological foundation from which early Christian motifs likely grew. Here, we examine only those ancient precedents that scholars and historians accept as authentic, attested, and relevant.</p>
+            <p class="font-bold mb-2">1. Dionysus (Greece)</p>
+            <p class="mb-4">Born of a mortal woman (Semele) and Zeus, Dionysus was a divine son who walked among men. His mystery cults offered salvation and eternal life, with rituals involving wine (his blood) and sacred feasting. Called the "twice-born," Dionysus was torn apart (in some versions by the Titans), then restored to life. His followers reenacted his death and rebirth, believing this united them with the god and promised immortality.</p>
+            <p class="mb-4">Sources: Euripides' *Bacchae* (5th c. BCE), Orphic hymns, Diodorus Siculus, Plutarch.</p>
+            <p class="font-bold mb-2">2. Asclepius (Greece)</p>
+            <p class="mb-4">The divine healer son of Apollo, Asclepius was so skilled he could raise the dead, prompting Zeus to strike him down with a thunderbolt. Later deified and widely worshipped in temples as a savior, especially for the sick. Shrines to him were places of miraculous healing, involving prayers, dreams, and rituals.</p>
+            <p class="mb-4">Sources: Pausanias, Pindar, Plato's *Republic*, inscriptions from healing temples (Asclepieia).</p>
+            <p class="font-bold mb-2">3. Romulus (Rome)</p>
+            <p class="mb-4">Born of a virgin priestess and the god Mars, Romulus was one of Rome's legendary founders. After a violent death (some say dismembered by the Senate), his body vanished, and he was said to have ascended to heaven. He reappeared in glorified form to a companion and proclaimed his divine identity.</p>
+            <p class="mb-4">Sources: Livy (*Ab Urbe Condita*), Plutarch (*Romulus*), Cicero.</p>
+            <p class="font-bold mb-2">4. Zalmoxis (Thrace / Scythia)</p>
+            <p class="mb-4">A mysterious figure among the Getae, Zalmoxis taught that death is not the end. According to Herodotus, he disappeared into a cave for three years, was thought dead, then reappeared alive, convincing followers of the afterlife. His legend involves teaching resurrection and immortality.</p>
+            <p class="mb-4">Sources: Herodotus (*Histories* 4.93–96), Plato (*Charmides*).</p>
+            <p class="font-bold mb-2">5. Osiris (Egypt)</p>
+            <p class="mb-4">Killed and dismembered by his brother Set, Osiris was restored by Isis and became Lord of the Underworld. His story centers on death, resurrection, and divine kingship over the dead. Pharaohs were seen as Osiris incarnate, guaranteeing eternal life through ritual union with him.</p>
+            <p class="mb-4">Sources: Pyramid Texts (c. 2400 BCE), Plutarch's *Isis and Osiris*, Coffin Texts, *Book of the Dead*.</p>
+            <p class="font-bold mb-2">6. Inanna / Ishtar (Mesopotamia)</p>
+            <p class="mb-4">The goddess descended into the underworld, was stripped, judged, and killed, then resurrected and ascended. Her return marked the renewal of life, associated with the agricultural cycle.</p>
+            <p class="mb-4">Sources: *The Descent of Inanna* (Sumerian, 3rd millennium BCE), *Ishtar's Descent* (Akkadian).</p>
+            <p class="mb-4">No single myth is a carbon copy of the Jesus narrative — but when examined together, they reveal a shared archetypal pattern: the dying-and-returning god, the savior healer, the miracle-working divine man, the ascended son of god, the teacher of mysteries and eternal life. These stories circulated in the Eastern Mediterranean for centuries before Christianity arose. They formed the cultural atmosphere into which the Jesus story was born, shaped, and elevated.</p>
+            <p class="mb-4">This makes them not identical to Jesus, but ancestral in mythic form — the blueprint before the figure. Every element included here is textually attested, archaeologically grounded, and endorsed by mainstream scholarship. This is not coincidence — it is literary evolution.</p>
+        </section>
+
+        <hr class="elegant-line mb-12">
+
+        <!-- Conclusion Section -->
+        <section id="conclusion" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">CONCLUSION</h2>
+            <p class="mb-4">"I would rather live with a brutal truth than a beautiful lie."</p>
+            <p class="mb-4">Labeling myths "pagan" is theological plagiarism and religious propaganda.</p>
+            <p class="mb-4">The evidence presented here suggests that the Bible, rather than being a timeless divine revelation, bears all the hallmarks of human construction - complete with contradictions, borrowed mythology, failed prophecies, and evolving theological concepts that reflect the political and cultural contexts of their times.</p>
+            <p class="mb-4">If a truly divine text existed, we might expect it to be free from the errors, inconsistencies, and moral contradictions that plague human writings. Instead, we find a collection of texts that appears to be exactly what we would expect from human authors working within the constraints of their historical periods, available knowledge, and cultural influences.</p>
+            <p class="mb-4">The question isn't whether these texts have historical, literary, or cultural value - they clearly do. The question is whether they represent divine truth or human imagination, divine revelation or human construction. The evidence speaks for itself.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
